@@ -1,3 +1,4 @@
+import { redirect } from "next/navigation";
 import { InteractiveHoverButton } from "./magicui/interactive-hover-button";
 
 
@@ -8,7 +9,7 @@ export function InputContainer() {
 
     const theme = formData.get("theme")
 
-    console.log(theme)
+    redirect(`/${theme}`)
   }
 
   return (
