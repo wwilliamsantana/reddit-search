@@ -6,9 +6,7 @@ export function InputContainer() {
 
   async function handlerSearchTheme(formData: FormData) {
     "use server"
-
     const theme = formData.get("theme")
-
     redirect(`/${theme}`)
   }
 
