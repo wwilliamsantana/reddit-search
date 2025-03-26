@@ -21,10 +21,10 @@ export default function Post({ data }: PostProps) {
   const timestampFromNow = dayjs.unix(data.created).fromNow()
 
   return (
-    <div className="bg-zinc-800 py-3 pl-4 pr-2 rounded-xl w-3xl">
+    <div className="bg-zinc-800 py-3 pl-4 pr-2 rounded-xl w-3xl max-[814px]:w-xl max-[620px]:w-md max-[488px]:w-sm max-[424px]:w-xs">
 
       <div className="flex justify-between ">
-        <p className="text-lg w-5/6">{data.title}</p>
+        <p className="text-lg w-5/6 max-[488px]:text-base">{data.title}</p>
         <time className="text-xs">{timestampFromNow}</time>
       </div>
       <strong className="text-sm">Autor: {data.author}</strong>

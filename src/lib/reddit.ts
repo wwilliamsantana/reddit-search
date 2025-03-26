@@ -35,7 +35,7 @@ export default async function fetchRedditPosts(theme: string) {
   const responseData: Listing = await response.json()
 
   return {
-    amount: responseData.data.dist ?? 0,
+    amount: responseData.data?.dist ?? 0,
     data: responseData.data.children.slice(4).map(element => {
       return {
         title: element.data.title,
