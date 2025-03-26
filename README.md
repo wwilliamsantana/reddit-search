@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Pesquisa Reddit
 
-## Getting Started
 
-First, run the development server:
+### Sobre
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+> Neste projeto utilizei uma API do Reddit para buscar dados relacionados a um determinado assunto. O projeto foi todo estruturado utilizando Nextjs utilizando seus últimos padrões de Server-components e Server Actions e na parte da estilização utilizei Tailwind CSS.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Tecnologia usadas com suas versões
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Nextjs - 15.2.4
+- Reactjs - 19.0.0
+- Typescript - 5
+- dayjs - 1.11.13
+- Lucide-react - 0.484.0
+- Tailwind - 4
+- Eslint -  9.0
 
-## Learn More
+### Execução do projeto
 
-To learn more about Next.js, take a look at the following resources:
+**Requer o NODE (npm) e o GIT instalado!**
+~~~javascript
+ 1. git clone https://github.com/wwilliamsantana/reddit-search.git
+ 2. cd .\reddit-search\
+ 3. npm install
+ 4. npm run dev 
+~~~~
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Layout - Desktop
 
-## Deploy on Vercel
+#### Home
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<img alt="" src="https://github.com/user-attachments/assets/5339917f-f41f-41d8-b83d-91d35853e726" style="width: 75%;"/>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+#### Search
+
+<img alt="" src="https://github.com/user-attachments/assets/0dbdfa1d-4c13-4db1-a205-334272d5a977" style="width: 75%;"/>
+
+
+
+
