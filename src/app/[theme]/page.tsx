@@ -5,8 +5,6 @@ import Link from "next/link"
 
 export default async function ResultsPage({ params }: { params: Promise<{ theme: string }> }) {
   const { theme } = await params
-
-
   return (
     <main className="min-h-screen py-4 mx-8">
       <header className="flex items-center justify-between">

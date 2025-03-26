@@ -20,7 +20,7 @@ interface ChildData {
   selftext: string;
   author: string;
   title: string;
-  url_overridden_by_dest: string;
+  permalink: string;
   created: number
 }
 
@@ -35,13 +35,13 @@ export default async function fetchRedditPosts(theme: string) {
   const responseData: Listing = await response.json()
 
   return {
-    amount: responseData.data.dist,
+    amount: responseData.data.dist ?? 0,
     data: responseData.data.children.slice(4).map(element => {
       return {
         title: element.data.title,
         author: element.data.author,
         selftext: element.data.selftext,
-        urlDest: element.data.url_overridden_by_dest,
+        urlDest: element.data.permalink,
         created: element.data.created
       }
     })
